@@ -46,7 +46,7 @@ def test_the_presets_show_their_numbers():
     at = _fresh_app()
     at.sidebar.button(key="preset_Ein Kontakt je Kante: nur jeder Fünfte erreichbar").click().run(timeout=TIMEOUT)
     assert [_metric(at, k) for k in ("Reichweite", "Aggregat", "Nicht transitiv")] == ["20 %", "94 %", "45,0 %"]
-    at.sidebar.button(key="preset_Zeitmarken gemischt: das Tempo kehrt zurück").click().run(timeout=TIMEOUT)
+    at.sidebar.button(key="preset_Zeitmarken gemischt: viel schneller").click().run(timeout=TIMEOUT)
     assert _metric(at, "Ankunft (Median)") == "11" and any("Aggregat und Kontaktfolge stimmen hier überein." in s.value for s in at.success)
     at.sidebar.button(key="preset_Verbünde").click().run(timeout=TIMEOUT)
     assert at.selectbox(key="raum_select").value == C.T_COMMUNITIES and _metric(at, "Reichweite") == "99 %" and _metric(at, "SI-Endgröße") == "27 %"

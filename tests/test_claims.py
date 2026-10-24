@@ -156,7 +156,7 @@ EXPECT = {'E1': [{'k': 1, 'form': 0.25, 'reach': 0.1545, 'static': 0.9612, 'medi
                                                                 'stimmt mit dem Aggregat überein, die SI-Ausbreitung liegt aber 19 Prozentpunkte darunter. SI mit β = 30 '
                                                                 '% je Kontakt: Endgröße 80 % gegen 99 % in der Aggregat-Rechnung (Kanten ohne Reihenfolge, jede mit 8 '
                                                                 'Kontakten).'},
-             'Zeitmarken gemischt: das Tempo kehrt zurück': {'m': 600,
+             'Zeitmarken gemischt: viel schneller': {'m': 600,
                                                              'contacts': 4800,
                                                              'reach': 0.9899,
                                                              'static': 0.99,

@@ -67,15 +67,15 @@ PRESETS = {
     "Ein Kontakt je Kante: nur jeder Fünfte erreichbar": {**_D, "k": 1},
     "Sechs Kontakte je Kante: fast alle erreicht": {**_D, "k": 6},
     "Stoßartig: erreichbar, aber langsam": {**_D, "c": 6, "k": 8, "form": 15},
-    "Zeitmarken gemischt: das Tempo kehrt zurück": {**_D, "c": 6, "k": 8, "form": 15, "null": N_TIME},
+    "Zeitmarken gemischt: viel schneller": {**_D, "c": 6, "k": 8, "form": 15, "null": N_TIME},
     "Verbünde": {**_D, "raum": T_COMMUNITIES, "c": 6, "k": 3},
 }
 PRESET_HELP = {
     "Zwei Kontakte je Kante: das Aggregat täuscht (Voreinstellung)": "Jede Verbindung hat im Fenster nur zwei Kontakte: das Aggregat ist fast ganz zusammenhängend, die Nachricht erreicht aber deutlich weniger Betriebe.",
     "Ein Kontakt je Kante: nur jeder Fünfte erreichbar": "Bei einem Kontakt je Verbindung zählt nur die Reihenfolge der Zeitmarken: das Aggregat täuscht am stärksten.",
-    "Sechs Kontakte je Kante: fast alle erreicht": "Mit sechs Kontakten je Verbindung kommt die Nachricht fast überall an; Aggregat und Kontaktfolge liegen nah beieinander.",
-    "Stoßartig: erreichbar, aber langsam": "Die Kontakte einer Verbindung drängen sich zusammen (Form 0,15): alle sind erreichbar, aber der Median der Ankunftszeit liegt weit über dem Poisson-artigen Fall.",
-    "Zeitmarken gemischt: das Tempo kehrt zurück": "Dieselben Kontakte mit zufällig vertauschten Zeitmarken: die Stoßartigkeit einer Verbindung ist weg, und die Nachricht kommt viel früher an.",
+    "Sechs Kontakte je Kante: fast alle erreicht": "Mit sechs Kontakten je Verbindung kommt die Nachricht fast überall an; bei der Reichweite liegen Aggregat und Kontaktfolge nah beieinander, die SI-Endgröße bleibt aber weit darunter.",
+    "Stoßartig: erreichbar, aber langsam": "Die Kontakte einer Verbindung drängen sich zusammen (Form 0,15): fast alle sind erreichbar (97,9 %), und der Median der Ankunftszeit liegt bei Form 0,15 rund ein Drittel über dem Poisson-artigen Fall (198 gegen 147).",
+    "Zeitmarken gemischt: viel schneller": "Dieselben Kontakte mit zufällig vertauschten Zeitmarken: die Nachricht kommt viel früher an (Median 11 statt 198); die Stoßartigkeit je Verbindung sinkt (B 0,24 statt 0,41), die ungleichmäßige Verteilung der Zeitmarken über das Fenster bleibt.",
     "Verbünde": "Das Aggregat hat sechs Gewerbeparks mit wenigen Verbindungen dazwischen: die Nachricht muss die Brücken zur richtigen Zeit finden.",
 }
 DEFAULT_PRESET_NAME = "Zwei Kontakte je Kante: das Aggregat täuscht (Voreinstellung)"

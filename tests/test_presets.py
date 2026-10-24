@@ -53,7 +53,7 @@ def test_each_preset_shows_what_its_name_says():
     assert six.reach > 0.9 and six.static - six.reach < 0.03 and six.nt < 0.01 and six.median < two.median
     burst = an["Stoßartig: erreichbar, aber langsam"]
     assert burst.reach > 0.95 and burst.burst > 0.3 and burst.median > 150 and burst.settings.form == 15
-    mixed = an["Zeitmarken gemischt: das Tempo kehrt zurück"]
+    mixed = an["Zeitmarken gemischt: viel schneller"]
     assert mixed.settings.null == C.N_TIME and mixed.median < 30 and mixed.reach > 0.95 and mixed.median < burst.median / 5                               # nur die Zuordnung von Kante und Zeit ist anders
     assert sorted(c[0] for c in mixed.contacts) == sorted(c[0] for c in burst.contacts) and mixed.edges == burst.edges
     comm = an["Verbünde"]
